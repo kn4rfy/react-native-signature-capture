@@ -11,17 +11,17 @@ import java.util.List;
 
 public class RSSignatureCapturePackage implements ReactPackage {
 
-  @Override
-  public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-    return Arrays.<NativeModule>asList();
-  }
+    @Override
+    public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
+        return Arrays.asList();
+    }
 
-  @Override
-  public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
-    return Arrays.<ViewManager>asList(new RSSignatureCaptureViewManager(reactContext));
-  }
+    @Override
+    public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
+        return Arrays.<ViewManager>asList(new RSSignatureCaptureViewManager(reactContext));
+    }
 
-  public List<Class<? extends JavaScriptModule>> createJSModules() {
-    return Arrays.asList();
-  }
+    public List<Class<? extends JavaScriptModule>> createJSModules() {
+        return Arrays.asList();
+    }
 }
